@@ -1,0 +1,61 @@
+@import url(./main.css);
+
+.container__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    align-self: flex-start;
+
+    .container__header--square {
+        width: 64px;
+        height: 64px;
+        background-color: #1C9770;
+        opacity: 10%;
+    }
+
+    .container__header--img {
+        position: absolute;
+
+        i {
+            font-size: 32px;
+        }
+    }
+}
+
+.container__main {
+    width: 340px;
+    margin: 0 auto;
+
+    .container__text--title {
+        h2 {
+            font-size: 32px;
+        }
+    }
+
+    .container__text--paragraph {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 16px;
+
+        p {
+            color: #6B6B6B;
+        }
+    }
+
+    .container__text--use-terms {
+        display: flex;
+
+        input {
+            margin-right: 15px;
+        }
+    }
+
+    .container__text--authorization {
+        display: flex;
+
+        input {
+            margin-right: 15px;
+        }
+    }
+}

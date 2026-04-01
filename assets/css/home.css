@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap");
+@import url(./reset.css);
+@import url(./main.css);
+
+:root {
+  --dark-green-color: #1C9770;
+  --btn-bg-color: #93CB52;
+  --main-bg-color: #EFF6FF;
+  --square-sides: 128px;
+}
+
+.container {
+    background-color: var(--dark-green-color);
+    color: #fff;
+}
+
+.container__circle {
+    background-color: #27ce99;
+    width: calc(var(--square-sides)*sqrt(2));
+    height: calc(var(--square-sides)*sqrt(2));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: var(--square-sides);
+        height: var(--square-sides);
+    }
+}
+
+.container__text {
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 2em;
+
+    .container__text--title {
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .container__text--paragraph {
+        font-size: 20px;
+    }
+}
+
+.container__button {
+    a {
+        color:var(--dark-green-color);
+        background-color: #fff;
+    }
+}

@@ -1,0 +1,55 @@
+@import url(./main.css);
+
+.container__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    max-width: 21.4rem;
+
+    .container__text--title {
+        width: 100%;
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: start;
+        }
+
+        .container__text--paragraph {
+            font-size: 20px;
+            color: #6B6B6B;
+        }
+    }
+}
+
+.container__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 25px;
+    margin-bottom: 25px;
+    
+    .container__cards--card {
+        background-color: #fff;
+        border-radius: 16px;
+        padding: 16px;
+        width: 353px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .card-text {
+            display: flex;
+
+            i {
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+            }
+        }
+    }
+}
