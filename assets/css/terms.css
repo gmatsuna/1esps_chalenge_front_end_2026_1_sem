@@ -1,4 +1,5 @@
 @import url(./main.css);
+@import url(./reset.css);
 
 .container__header {
     display: flex;
@@ -25,7 +26,12 @@
 
 .container__main {
     width: 340px;
+    height: 60%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
 
     .container__text--title {
         h2 {
@@ -35,7 +41,7 @@
 
     .container__text--paragraph {
         background-color: #fff;
-        padding: 10px;
+        padding: 15px;
         border-radius: 16px;
 
         p {
@@ -49,6 +55,11 @@
         input {
             margin-right: 15px;
         }
+
+        a {
+            color: #1C9770;
+        }
+
     }
 
     .container__text--authorization {
